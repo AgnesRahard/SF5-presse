@@ -1,0 +1,21 @@
+{{ form_start(form) }}
+<div
+	class="row">
+	{# {{ form_row(form) }} #}
+	<div class="col-sm-4">
+		{{ form_row(form.titre) }}
+		{{ form_row(form.date_parution) }}
+	</div>
+	<div class="col-sm-4">
+		{{ form_row(form.cahier) }}
+        <p class='text-center'>
+        <button class="btn btn-primary">{{ button_label|default('Enregistrer') }}</button>
+        </p>
+	</div>
+	<div class="col-sm-4">
+		{{ form_row(form.page) }}
+		{{ form_row(form.tags) }}		
+	</div>
+	{# <button class="btn btn-primary">{{ button_label|default('Enregistrer') }}</button> #}
+</div>
+{{ form_end(form) }}

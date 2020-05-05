@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouveau Cahier{% endblock %}
+
+{% block body %}
+    <div class="text-center">
+		<h2 class='text-center'>Ajout d'un cahier</h2>	
+		<div class="d-flex justify-content-center">
+			<a class='btn btn-primary mx-2' href="{{ path('cahier_index') }}">
+				<i class="fas fa-undo-alt" alt='Retour à la liste'></i>
+				Retour à la liste
+			</a>
+		</div>
+	</div>
+
+    {{ include('cahier/_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Tag{% endblock %}
+
+{% block body %}
+        <div class="text-center">
+		<h2 class='text-center'>Ajout d'un mot-clé</h2>	
+		<div class="d-flex justify-content-center">
+			<a class='btn btn-primary mx-2' href="{{ path('tag_index') }}">
+				<i class="fas fa-undo-alt" alt='Retour à la liste'></i>
+				Retour à la liste
+			</a>
+		</div>
+	</div>
+	{{ include('tag/_form.html.twig') }}
+{% endblock %}
